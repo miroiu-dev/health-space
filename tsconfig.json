@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
+    "allowJs": false,
     "skipLibCheck": true,
     "strict": true,
     "noEmit": true,
@@ -18,7 +18,10 @@
       }
     ],
     "paths": {
-      "health-space/*": ["./src/*"]
+      "@/health-space/*": ["./src/*"],
+      "@/components": ["./src/components"],
+      "@/lib/*": ["./src/lib/*"],
+      "@/providers": ["./src/components/providers"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
